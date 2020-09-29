@@ -1,0 +1,18 @@
+type User @model {
+  id: String!
+  name: String
+  bookmarks: [Bookmarks]
+  categorizedMarks: [CategorizedMarks]
+}
+
+type Bookmarks {
+  id: ID
+  name: String
+  url: String
+}
+
+type CategorizedMarks {
+  id: ID
+  name: String
+  bookmarks: [Bookmarks]
+}

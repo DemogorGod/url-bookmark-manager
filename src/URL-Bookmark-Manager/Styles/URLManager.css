@@ -1,0 +1,74 @@
+.URLM-container {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+.URLM-container h1{
+    font-size: 36px;
+    color: #deb23a;
+}
+
+.URLM-container p{
+    font-size: 18px;
+    color: #000000;
+    opacity: .5;
+}
+.managers-holder{
+    width: 60%;
+    display: inline-block;
+}
+
+.URLM-button{
+    float: left;
+    margin-right: 20px;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    background-color: white;
+    font-size: 20px;
+}
+
+.URLM-button:hover{
+    opacity: .5;
+}
+
+.add-button {
+    width: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.add-button:hover {
+    width: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: green;
+    opacity: 1;
+}
+
+.manager-input{
+    float: left;
+    width: 150px;
+    margin-left: 10px;
+    outline: none;
+    padding-left: 10px;
+    border: 1px solid #deb23a;
+    border-radius: 25px;
+    color: #deb23a;
+}
+
+.manager-button{
+    float: left;
+    margin-left: 10px;
+    cursor: pointer;
+    background-color: white;
+    color: #deb23a;
+    outline: none;
+    border-radius: 25px;
+    border: 1px solid #deb23a;
+}
+
+.manager-button:hover{
+    background-color: black;
+}

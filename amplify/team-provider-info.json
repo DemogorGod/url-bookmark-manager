@@ -1,0 +1,20 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-urlbookmarkmanager-dev-172505-authRole",
+            "UnauthRoleArn": "arn:aws:iam::549138130109:role/amplify-urlbookmarkmanager-dev-172505-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::549138130109:role/amplify-urlbookmarkmanager-dev-172505-authRole",
+            "Region": "us-east-2",
+            "DeploymentBucketName": "amplify-urlbookmarkmanager-dev-172505-deployment",
+            "UnauthRoleName": "amplify-urlbookmarkmanager-dev-172505-unauthRole",
+            "StackName": "amplify-urlbookmarkmanager-dev-172505",
+            "StackId": "arn:aws:cloudformation:us-east-2:549138130109:stack/amplify-urlbookmarkmanager-dev-172505/149d5520-01d1-11eb-ae2b-0af2478844bc",
+            "AmplifyAppId": "d11ygg1x5je82h"
+        },
+        "categories": {
+            "auth": {
+                "urlbookmarkmanager4e2e0e3b": {}
+            }
+        }
+    }
+}

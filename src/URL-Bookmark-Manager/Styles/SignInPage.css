@@ -1,0 +1,39 @@
+.sign-in-page{
+    display: inline-block;
+    width: 90%;
+    margin-left: 5%;
+    text-align: center;
+}
+
+.sign-in-page-inputs{
+    text-decoration: none;
+    border: 1px solid #deb23a;
+    border-radius: 25px;
+    margin: 10px;
+    padding-left: 10px;
+    outline: none;
+}
+
+.sign-in-page-button{
+    text-decoration: none;
+    border: 1px solid #deb23a;
+    border-radius: 25px;
+    margin: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #deb23a;
+    background-color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+}
+
+.sign-in-page-switch{
+    color: #deb23a;
+    cursor: pointer;
+}
+.sign-in-page-button:hover{
+    background-color: #000000;
+}
