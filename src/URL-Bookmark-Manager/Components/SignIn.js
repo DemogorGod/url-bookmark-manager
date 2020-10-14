@@ -31,7 +31,7 @@ class SignIn extends Component {
             <div>
                 <input type='text' name="username" value={this.state.username} placeholder="Username..." onChange={this.handleOnChangeInput} className="sign-in-page-inputs" />
                 <br></br>
-                <input type='text' name="password" value={this.state.password} placeholder="Password..." onChange={this.handleOnChangeInput} className="sign-in-page-inputs" />
+                <input type='password' name="password" value={this.state.password} placeholder="Password..." onChange={this.handleOnChangeInput} className="sign-in-page-inputs" />
                 <p>Not a user yet? <span onClick={() => this.props.switchPage(2)} className="sign-in-page-switch">Register</span></p>
                 <span onClick={() => this.props.switchPage(3)} className="sign-in-page-switch">Confirm New Email</span> <br></br>
                 <button onClick={this.handleSignIn} className="sign-in-page-button">Sign In</button>

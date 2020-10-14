@@ -14,8 +14,12 @@ class URLManager extends Component {
         addBookmarker: false,
         addCategory: false,
         name: '',
-        url: '',
+        url: 'http://',
         output: ''
+    }
+
+    componentDidMount = () => {
+
     }
     toggleCatagories = () => { this.setState({ catagories: true, allBookmarks: false }) }
     toggleAllBookmarkers = () => { this.setState({ catagories: false, allBookmarks: true }) }
@@ -95,7 +99,7 @@ class URLManager extends Component {
         }
     }
     render() {
-        return (
+        return this.props.user ? (
             <div className="URLM-container">
                 <h1>Welcome to URL Bookmark Manager</h1>
                 <p>Created by: Stevan Najeeb</p>
@@ -147,11 +151,11 @@ class URLManager extends Component {
                         <Catagories /> : null
                     }
                     {this.state.allBookmarks ?
-                        <ALLBookmarks /> : null
+                        <ALLBookmarks bookmarks={this.props.user.bookmarks} /> : null
                     }
                 </div>
             </div>
-        )
+        ) : (<div>loading</div>)
     }
 }
 

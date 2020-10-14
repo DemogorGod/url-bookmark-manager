@@ -1,6 +1,6 @@
 
 const initialState = {
-    user: "apple",
+    user: null,
 }
 
 const userReducer = (state = initialState, action) => {

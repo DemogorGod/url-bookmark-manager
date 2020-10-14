@@ -46,12 +46,12 @@ class Navbar extends Component {
     }
     render() {
         const passwordView = this.state.changePassword
-        return (
+        return this.props.user ? (
             <div>
                 <div className="navbar-holder">
                     <button onClick={this.handleSignOut}>Sign Out</button>
                     <button onClick={this.handleTogglePasswordView}>Change Password</button>
-                    <p className='welcome-message'>Welcome, <span>{this.props.user.name}</span></p>
+                    <p className='welcome-message'>Welcome, <span>{this.props.user.name}</span></p> : null
                 </div>
                 {passwordView ?
                     <div className="change-password-holder">
@@ -68,7 +68,9 @@ class Navbar extends Component {
                     </div> : null
                 }
             </div>
-        )
+        ) : (
+                <div> loading</div>
+            )
     }
 }
 

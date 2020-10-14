@@ -37,7 +37,6 @@ class SignIn extends Component {
                 <br></br>
                 <input type='text' name="code" value={this.state.code} placeholder="Code..." onChange={this.handleOnChangeInput} className="sign-in-page-inputs" />
                 <p>Already confirmed? <span onClick={() => this.props.switchPage(1)} className="sign-in-page-switch">Sign In</span></p>
-                {this.state.code} | {this.state.username}
                 <button onClick={this.handleConfirmEmail} className="sign-in-page-button">Confirm Email</button>
                 <p style={{ color: 'red' }}>{this.state.output}</p>
             </div>

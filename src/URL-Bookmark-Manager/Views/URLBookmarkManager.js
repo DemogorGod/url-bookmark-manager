@@ -10,7 +10,7 @@ import SignInPage from './SignInPage'
 Amplify.configure(awsConfig)
 class URLBookManager extends Component {
     state = {
-        user: false,
+        user: null,
     }
 
     componentDidMount() {
@@ -21,8 +21,8 @@ class URLBookManager extends Component {
 
     getUserData = async () => {
         try {
-            const user = await Auth.currentAuthenticatedUser()
-            user ? this.setState({ user }) : this.setState({ user: null })
+            let user = await Auth.currentAuthenticatedUser()
+            await this.setState({ user: user })
         } catch (error) {
             console.log("error in attempting getting user data " + error)
         }
