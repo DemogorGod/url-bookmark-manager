@@ -51,7 +51,7 @@ class URLManager extends Component {
                 await delete user.updatedAt
                 await API.graphql(graphqlOperation(mutations.updateUser, { input: user }))
                 this.switchAddBookmarker()
-                this.setState({ name: '', url: '' })
+                this.setState({ name: '', url: 'http://' })
             } catch (error) {
                 console.log(error)
             }

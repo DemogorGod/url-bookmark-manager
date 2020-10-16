@@ -107,7 +107,7 @@
 .bookmark-holder h1{
     float: left;
     font-size: 24px;
-    width: 40%;
+    width: 20%;
     text-align: left;
     margin-top: 10px;
 }
@@ -165,4 +165,101 @@
 
 .edit-buttons:hover{
     background-color: black;
+}
+
+.expand-button{
+    color: #deb23a;
+
+}
+
+.expand-bookmarks{
+    margin-top: 10px;
+    border: 1px solid #deb23a;
+    border-radius: 5px;
+    width: 70%;
+    float: right;
+    text-align: center;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    cursor: pointer;
+    background-color: white;
+    -webkit-user-select: none;       
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none; 
+}
+.expand-bookmarks:hover{
+    opacity: .5;
+}
+
+.expanded-bookmarks{
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+
+.add-button-category{
+    margin-left: 10px;
+    color: black;
+    font-size: 30px;
+    padding: 0px;
+    margin-top: 10px;
+    float: left;
+}
+
+
+.add-bookmark-to-category{
+    width: 100%;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.add-bookmark-to-category h1{
+    font-size: 14px;
+    color: #deb23a;
+    margin-right: 20px;
+}
+
+.add-bookmark-to-category select{
+    margin-top: 7px;
+    height: 20px;
+    border: 1px solid #deb23a;
+    border-radius: 25px;
+    outline: none;
+    font-size: 12px;
+    color: #deb23a;
+    margin-right: 20px;
+    padding: 0px;
+    padding-left: 10px;
+}
+
+.add-bookmark-to-category input{
+    margin-top: 8px;
+    width: 200px;
+    margin-right: 20px;
+    padding-left: 10px;
+    outline: none;
+    border: 1px #deb23a solid;
+    border-radius: 25px;
+    color: #deb23a;
+}
+
+.add-bookmark-to-category button{
+    margin-top: 7px;
+    height: 20px;
+    border: 1px solid #deb23a;
+    border-radius: 25px;
+    outline: none;
+    font-size: 12px;
+    color: #deb23a;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.category-container{
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
 }

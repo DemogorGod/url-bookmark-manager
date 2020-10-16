@@ -44,7 +44,10 @@ class Catagories extends Component {
                     onChange={this.handleOnChangeInput} />
                 <button onClick={this.handleSearch} className="search-button">Search</button>
                 {catagories.map((category, index) =>
-                    <Category key={index} category={category} />
+                    <div key={index} style={{ width: '100%', height: 'auto' }}>
+                        <Category category={category} />
+                        <br />
+                    </div>
                 )}
             </div>
         ) : (
